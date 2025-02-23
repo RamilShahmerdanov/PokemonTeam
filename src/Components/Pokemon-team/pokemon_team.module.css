@@ -1,0 +1,58 @@
+.team {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.adteam {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 12%;
+  background-color: white;
+  align-items: center;
+  height: 80px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.pokodata {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.pokodata img {
+  width: 50px;
+  height: 50px;
+}
+.btns {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.btninc {
+  background-color: #fab407;
+  font-size: 25px;
+  border-radius: 5px;
+  width: 35px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btndec {
+  background-color: #27a747;
+  font-size: 25px;
+  border-radius: 5px;
+  width: 35px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btnremove {
+  background-color: #d73846;
+  font-size: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.texts{
+  margin: 30px 0;
+}
+

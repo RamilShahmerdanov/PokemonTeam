@@ -1,0 +1,29 @@
+.body_back {
+  background-color: #ceebfd;
+}
+.pokemon {
+  width: 180px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  background-color: #f8f9fb;
+  border-radius: 10px;
+  padding-bottom: 5px;
+}
+.img {
+  width: 100px;
+  height: 100px;
+}
+.pokemon button{
+    background-color:#0079ff;
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
