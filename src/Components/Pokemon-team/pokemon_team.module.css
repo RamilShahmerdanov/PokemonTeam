@@ -14,11 +14,13 @@
   margin-bottom: 10px;
   width: 76%;
   padding: 0 20px;
+ 
 }
 .pokodata {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  align-items: center;
 }
 .pokodata img {
   width: 50px;
@@ -72,11 +74,11 @@
   margin-top: 20px;
 }
 .tablebody h2{
-  font-weight: 600;
+  font-weight: 500;
   font-size: 25px;
 }
 .tablebody h3{
-  font-weight: 600;
+  font-weight: 500;
   font-size: 25px;
 }
 
