@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import datadef from "../src/Components/data/data.json";
 import "./index.css";
 
@@ -9,7 +9,14 @@ import Pokemon_Team from "./Components/Pokemon-team/Pokemon_Team";
 
 function App() {
   const [pokodata, setPokodata] = useState([]);
-  const [team, setTeam] = useState([]);
+  const [team, setTeam] = useState(()=>{
+    
+    const savedTeam = localStorage.getItem("pokemonTeam");
+    return savedTeam ? JSON.parse(savedTeam) : [];
+  });
+  useEffect(() => {
+    localStorage.setItem("pokemonTeam", JSON.stringify(team));
+  }, [team]);
 
   const addToTeam = (pokemon) => {
     const exitingPokemon = team.find((p) => p.id === pokemon.id);
