@@ -6,17 +6,19 @@
 .adteam {
   display: flex;
   justify-content: space-between;
-  margin: 0 12%;
+  
   background-color: white;
   align-items: center;
   height: 80px;
   border-radius: 10px;
   margin-bottom: 10px;
+  width: 76%;
+  padding: 0 20px;
 }
 .pokodata {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
 }
 .pokodata img {
   width: 50px;
@@ -36,6 +38,8 @@
   width: 35px;
   cursor: pointer;
   font-weight: 600;
+  color: white;
+
 }
 .btndec {
   background-color: #27a747;
@@ -44,6 +48,8 @@
   width: 35px;
   cursor: pointer;
   font-weight: 600;
+  color: white;
+
 }
 .btnremove {
   background-color: #d73846;
@@ -51,8 +57,61 @@
   border-radius: 5px;
   cursor: pointer;
   font-weight: 600;
+  color: white;
+
 }
 .texts{
   margin: 30px 0;
 }
 
+.tablebody{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.tablebody h2{
+  font-weight: 600;
+  font-size: 25px;
+}
+.tablebody h3{
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.tablecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  transform: translate(-50%, -50%);
+ 
+}
+
+.table {
+  width: 80%;
+  border-collapse: collapse;
+  border: 2px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.table thead {
+  background-color: #007bff;
+  color: white;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+  background-color: #ddd;
+}

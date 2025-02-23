@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Pokemons from "../Carts/Pokemons";
 import styles from "./pokemon_team.module.css";
 import Table from "react-bootstrap/Table";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 function Pokemon_Team({ pokodata, team, addToTeam, setTeam }) {
   const [totalcount, setTotalcount] = useState(0);
@@ -32,7 +32,8 @@ function Pokemon_Team({ pokodata, team, addToTeam, setTeam }) {
     setTotalcount(totalcount);
   }, [team]);
   return (
-    <div>
+    <>
+    <div className={styles.tablebody}>
       <div className={styles.team}>
         {pokodata.map((item, index) => (
           <Pokemons key={index} item={item} addToTeam={addToTeam} />
@@ -80,24 +81,27 @@ function Pokemon_Team({ pokodata, team, addToTeam, setTeam }) {
       <h3 className={styles.texts}>Total Pokemon: {totalcount}</h3>
       <h2 className={styles.texts}>Individual Pokemon Count</h2>
       <Table striped bordered hover className={styles.table}>
-        <thead>
-          <tr>
-            <th>Nickname</th>
-            <th>Count</th>
-            <th>Label</th>
-          </tr>
-        </thead>
-        <tbody>
-          {team.map((pokemon, i) => (
-            <tr key={i}>
-              <td>{pokemon.name}</td>
-              <td>{pokemon.count}</td>
-              <td>Pokémons</td>
-            </tr>
-          ))}
-        </tbody>
-      </Table>
+    <thead>
+      <tr>
+        <th>Nickname</th>
+        <th>Count</th>
+        <th>Label</th>
+      </tr>
+    </thead>
+    <tbody>
+      {team.map((pokemon, i) => (
+        <tr key={i}>
+          <td>{pokemon.name}</td>
+          <td>{pokemon.count}</td>
+          <td>Pokémons</td>
+        </tr>
+      ))}
+    </tbody>
+  </Table>
+      
     </div>
+   
+  </>
   );
 }
 

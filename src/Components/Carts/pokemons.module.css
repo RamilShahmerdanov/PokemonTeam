@@ -20,10 +20,11 @@
 }
 .pokemon button{
     background-color:#0079ff;
-    font-size: 15px;
+    font-size: 17px;
     color: white;
     padding: 10px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    font-weight: 600;
 }
